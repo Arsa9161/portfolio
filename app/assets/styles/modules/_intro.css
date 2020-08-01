@@ -1,0 +1,29 @@
+.intro {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: $intro-bg-color;
+  &__img {
+    width: 40%;
+    margin-left: -300px;
+  }
+  &__parag {
+    width: 60%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    letter-spacing: 2px;
+    h1 {
+      font-size: 3.3rem;
+      font-weight: 200;
+    }
+    p {
+      margin-top: 0.5em;
+      font-size: 2.3rem;
+      font-weight: 200;
+    }
+  }
+}

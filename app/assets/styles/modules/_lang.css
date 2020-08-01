@@ -1,0 +1,17 @@
+.lang {
+  font-weight: 100;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+
+  cursor: pointer;
+  &__item {
+    padding: 0 5px;
+    text-decoration: none;
+    color: $lang-color;
+  }
+  li:not(:last-child) {
+    border-right: 1px solid $lang-color;
+  }
+}
