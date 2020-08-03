@@ -3,27 +3,104 @@
   position: relative;
   overflow: hidden;
   background-color: $intro-bg-color;
-  &__img {
-    width: 40%;
-    margin-left: -300px;
+  &__pro-picture {
+    img {
+      display: block;
+    }
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 200px;
+    top: 7%;
+
+    @mixin atSmall {
+      width: 300px;
+      height: 300px;
+    }
+    @mixin atLarge {
+      width: 27%;
+      height: auto;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      border-radius: 20px;
+    }
+    &--border {
+      border: 1px solid white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 10px;
+      border-radius: inherit;
+      @mixin atLarge {
+        margin: 20px;
+      }
+    }
+  }
+  &__img-bg {
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
   }
   &__parag {
-    width: 60%;
-    color: white;
+    color: $intro-color;
     position: absolute;
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
     text-align: center;
     letter-spacing: 2px;
+
+    width: 100%;
+    top: 60%;
+
+    @mixin atSmall {
+      padding: 0 15px;
+    }
+    @mixin atLarge {
+      width: 56%;
+
+      left: auto;
+      top: 50%;
+      right: 6%;
+      transform: translateY(-50%);
+    }
     h1 {
-      font-size: 3.3rem;
+      font-size: 1.5rem;
       font-weight: 200;
+      @mixin atSmall {
+        font-size: 1.8rem;
+      }
+      @mixin atMedium {
+        font-size: 2.8rem;
+      }
+      @mixin atLargest {
+        font-size: 2.8rem;
+      }
     }
     p {
-      margin-top: 0.5em;
-      font-size: 2.3rem;
       font-weight: 200;
+
+      font-size: 1.1rem;
+      margin: 0.4em;
+
+      @mixin atSmall {
+        font-size: 1.2rem;
+        margin: 0.6em;
+      }
+      @mixin atMedium {
+        font-size: 1.6rem;
+      }
+
+      @mixin atLargest {
+        font-size: 1.9rem;
+      }
     }
   }
 }

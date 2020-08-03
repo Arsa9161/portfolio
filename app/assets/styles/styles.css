@@ -4,3 +4,7 @@
 @import "./base/_variables.css";
 @import "./modules/_intro.css";
 @import "./modules/_lang.css";
+@import "./modules/_section.css";
+@import "./modules/_nav-links.css";
+@import "./modules/_header.css";
+@import "./modules/_wrapper.css";

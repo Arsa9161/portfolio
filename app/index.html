@@ -11,8 +11,32 @@
   </head>
   <body>
     <section class="intro">
-      <div class="intro__img">
-        <img src="../../assets/images/my.jpg" alt="my profile" />
+      <div class="intro__pro-picture">
+        <div class="intro__pro-picture--border"></div>
+        <picture>
+          <source
+            srcset="./assets/images/pro-picture-large.jpg"
+            media="(min-width:1200px)"
+          />
+          <img src="./assets/images/pro-picture-medium.jpg" alt="" />
+        </picture>
+      </div>
+      <div class="intro__img-bg">
+        <picture>
+          <source
+            srcset="./assets/images/bg-large.png"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="./assets/images/bg-medium.png"
+            media="(min-width:800px)"
+          />
+          <source
+            srcset="./assets/images/bg-small.png"
+            media="(min-width:530px)"
+          />
+          <img src="./assets/images/bg-smallest.png" alt="" />
+        </picture>
       </div>
       <div class="intro__parag">
         <h1>Сайн уу? Миний нэр Ариунсанаа</h1>

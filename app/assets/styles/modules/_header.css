@@ -1,0 +1,11 @@
+.header {
+  box-shadow: 0 2.8px 5.2px rgba(0, 0, 0, 0.2);
+  &__logo {
+    width: 50px;
+    display: inline-block;
+  }
+  &__content {
+    margin-top: 18px;
+    float: right;
+  }
+}

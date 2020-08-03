@@ -1,0 +1,14 @@
+.nav-links {
+  ul {
+    display: flex;
+  }
+  li {
+    margin-left: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: $nav-color;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+  }
+}
