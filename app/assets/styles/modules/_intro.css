@@ -18,11 +18,34 @@
     height: 200px;
     top: 7%;
 
-    @mixin atSmall {
+    @mixin atSmall-height {
+      width: 250px;
+      height: 250px;
+    }
+    @mixin atMedium-height {
+      top: 12%;
+    }
+    @mixin atSmall-width {
       width: 300px;
       height: 300px;
+
+      @mixin atLarge-height {
+        width: 350px;
+        height: 350px;
+      }
     }
-    @mixin atLarge {
+    @mixin atMedium-width {
+      @mixin atMedium-height {
+        top: 10%;
+        width: 300px;
+        height: 300px;
+      }
+      @mixin atLargest-height {
+        width: 400px;
+        height: 400px;
+      }
+    }
+    @mixin atLarge-width {
       width: 27%;
       height: auto;
       top: 50%;
@@ -30,6 +53,7 @@
       transform: translateY(-50%);
       border-radius: 20px;
     }
+
     &--border {
       border: 1px solid white;
       position: absolute;
@@ -39,7 +63,7 @@
       bottom: 0;
       margin: 10px;
       border-radius: inherit;
-      @mixin atLarge {
+      @mixin atLarge-width {
         margin: 20px;
       }
     }
@@ -60,10 +84,11 @@
     width: 100%;
     top: 60%;
 
-    @mixin atSmall {
+    @mixin atSmall-width {
       padding: 0 15px;
     }
-    @mixin atLarge {
+
+    @mixin atLarge-width {
       width: 56%;
 
       left: auto;
@@ -74,13 +99,22 @@
     h1 {
       font-size: 1.5rem;
       font-weight: 200;
-      @mixin atSmall {
+      @mixin atMedium-height {
+        font-size: 1.7rem;
+      }
+      @mixin atSmall-width {
         font-size: 1.8rem;
+        @mixin atLarge-height {
+          font-size: 2.5rem;
+        }
       }
-      @mixin atMedium {
-        font-size: 2.8rem;
+      @mixin atMedium-width {
+        font-size: 2.4rem;
+        @mixin atLarge-height {
+          font-size: 3.2rem;
+        }
       }
-      @mixin atLargest {
+      @mixin atLargest-width {
         font-size: 2.8rem;
       }
     }
@@ -90,16 +124,74 @@
       font-size: 1.1rem;
       margin: 0.4em;
 
-      @mixin atSmall {
+      @mixin atSmall-height {
+        margin: 1em;
+      }
+      @mixin atMedium-height {
+        font-size: 1.3rem;
+        margin: 1em;
+      }
+      @mixin atSmall-width {
         font-size: 1.2rem;
         margin: 0.6em;
-      }
-      @mixin atMedium {
-        font-size: 1.6rem;
+
+        @mixin atLarge-height {
+          font-size: 1.8rem;
+          margin: 0.9em;
+        }
       }
 
-      @mixin atLargest {
+      @mixin atMedium-width {
+        font-size: 1.6rem;
+        @mixin atLarge-height {
+          font-size: 2.4rem;
+        }
+      }
+
+      @mixin atLargest-width {
         font-size: 1.9rem;
+      }
+    }
+    &__scroll-down {
+      position: absolute;
+      left: 50%;
+      bottom: -30%;
+      transform-origin: 50% 100%;
+      transform: translateX(-50%);
+      transform: rotate(-45deg);
+      cursor: pointer;
+      opacity: 0.8;
+      &__middle {
+        font-size: 1.8rem;
+        position: relative;
+        bottom: 18%;
+        color: $intro-color;
+
+        @mixin atMedium-width {
+          @mixin atLarge-height {
+            font-size: 3rem;
+          }
+        }
+        @mixin atLarge-width {
+          font-size: 3rem;
+        }
+      }
+      &__middle::before {
+        content: "\221F";
+        font-size: inherit;
+        position: absolute;
+      }
+
+      &__middle::before {
+        transform: translate(6px, -6px);
+        @mixin atMedium-width {
+          @mixin atLarge-height {
+            transform: translate(10px, -10px);
+          }
+        }
+        @mixin atLarge-width {
+          transform: translate(10px, -10px);
+        }
       }
     }
   }
