@@ -2,7 +2,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background-color: $intro-bg-color;
+  background-color: var(--intro-bg-color);
   &__pro-picture {
     img {
       display: block;
@@ -76,7 +76,7 @@
     }
   }
   &__parag {
-    color: $intro-color;
+    color: var(--intro-color);
     position: absolute;
     text-align: center;
     letter-spacing: 2px;
@@ -165,7 +165,7 @@
         font-size: 1.8rem;
         position: relative;
         bottom: 18%;
-        color: $intro-color;
+        color: var(--intro-color);
 
         @mixin atMedium-width {
           @mixin atLarge-height {

@@ -7,7 +7,7 @@
   }
   a {
     text-decoration: none;
-    color: $nav-color;
+    color: var(--nav-color);
     letter-spacing: 1px;
     padding: 5px 10px;
   }

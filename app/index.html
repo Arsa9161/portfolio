@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Арса</title>
   </head>
@@ -22,20 +26,21 @@
         </picture>
       </div>
       <div class="intro__img-bg">
-        <picture>
+        
+        <picture id="intro-bg">
           <source
-            srcset="./assets/images/bg-large.png"
+            srcset="./assets/images/light/bg-large.png"
             media="(min-width:1200px)"
           />
           <source
-            srcset="./assets/images/bg-medium.png"
+            srcset="./assets/images/light/bg-medium.png"
             media="(min-width:800px)"
           />
           <source
-            srcset="./assets/images/bg-small.png"
+            srcset="./assets/images/light/bg-small.png"
             media="(min-width:530px)"
           />
-          <img src="./assets/images/bg-smallest.png" alt="" />
+          <img srcset="./assets/images/light/bg-smallest.png" alt="" />
         </picture>
       </div>
       <div class="intro__parag">
@@ -50,10 +55,39 @@
           <div class="intro__parag__scroll-down__middle">&angrt;</div>
         </div>
       </div>
-      <ul class="lang">
-        <li><a href="../mn/index.html">MN</a></li>
-        <li><a href="../en/index.html">EN</a></li>
-      </ul>
+      <div class="config">
+        <ul class="config__lang">
+          <li><a href="../mn/index.html">MN</a></li>
+          <li><a href="../en/index.html">EN</a></li>
+        </ul>
+        <div class="config__theme-controller">
+          <i class="fa fa-gear" id="theme-controller"></i>
+          <div class="config__theme-controller__items">
+            <div class="config__theme-controller__items__item">
+              <img src="" alt="" />
+              <h6>цайвар</h6>
+              <div class="switch-btn">
+                <input type="checkbox" id="switch-1" data-theme="light"/><label for="switch-1"></label>
+              </div>
+              </div>
+              <div class="config__theme-controller__items__item">
+                <img src="" alt="" />
+                <h6>ногоон</h6>
+                <div class="switch-btn">
+                  <input type="checkbox" id="switch-2" data-theme="green" /><label for="switch-2"></label>
+                </div>
+                </div>
+                <div class="config__theme-controller__items__item">
+                  <img src="" alt="" />
+                  <h6>бараан</h6>
+                  <div class="switch-btn">
+                    <input type="checkbox" id="switch-3" data-theme="dark"/><label for="switch-3"></label>
+                  </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section">

@@ -1,4 +1,12 @@
-$intro-bg-color: #c6c6c6;
-$intro-color: #314d66;
-$lang-color: white;
-$nav-color: $intro-bg-color;
+html[theme="dark"] {
+  --intro-bg-color: #070a1e;
+  --intro-color: #fff;
+  --lang-color: #fff;
+  --nav-color: var(--intro-bg-color);
+}
+html[theme="light"] {
+  --intro-bg-color: #c6c6c6;
+  --intro-color: #314d66;
+  --lang-color: green;
+  --nav-color: var(--intro-bg-color);
+}
