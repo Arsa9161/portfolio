@@ -1,5 +1,5 @@
 .config {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 10px;
   display: flex;
@@ -10,8 +10,23 @@
     top: 15px;
     right: 20px;
   }
+  &--header {
+    position: static;
+    margin-left: 50px;
+
+    .config__theme-controller,
+    .config__lang {
+      color: var(--config-color);
+    }
+    .config__theme-controller {
+      font-size: 1.3rem;
+    }
+    .config__lang {
+      font-size: 0.8rem;
+    }
+  }
   &__lang {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.9rem;
     display: flex;
 
@@ -19,15 +34,15 @@
     a {
       padding: 0 5px;
       text-decoration: none;
-      color: var(--lang-color);
+      color: var(--config-color);
     }
     li:not(:last-child) {
-      border-right: 1px solid var(--lang-color);
+      border-right: 1px solid var(--config-color);
     }
   }
   &__theme-controller {
     cursor: pointer;
-    color: #808080;
+    color: var(--config-color);
     font-size: 1.5rem;
     margin: 0 5px 0 8px;
 

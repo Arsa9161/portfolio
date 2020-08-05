@@ -1,0 +1,32 @@
+.about {
+  &__info,
+  &__bio {
+    display: inline-block;
+    padding: 30px 40px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 1.9rem;
+    height: 250px;
+    color: rgb(153, 153, 153);
+  }
+  &__info {
+    width: 35%;
+    font-size: 1.5rem;
+    &__parag {
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      span {
+        text-align: right;
+        font-weight: 300;
+        margin-left: 1rem;
+      }
+    }
+  }
+  &__bio {
+    width: 50%;
+  }
+}

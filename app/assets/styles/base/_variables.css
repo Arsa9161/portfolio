@@ -1,12 +1,15 @@
 html[theme="dark"] {
-  --intro-bg-color: #070a1e;
-  --intro-color: #fff;
-  --lang-color: #fff;
-  --nav-color: var(--intro-bg-color);
+  --intro-bg-color: #091921;
+  --intro-color: #bebfc0;
+  --nav-color: var(--intro-color);
+  --config-color: var(--nav-color);
+  --section-bg-color: #091921;
 }
 html[theme="light"] {
   --intro-bg-color: #c6c6c6;
   --intro-color: #314d66;
-  --lang-color: green;
-  --nav-color: var(--intro-bg-color);
+  --nav-color: var(--intro-color);
+  --config-color: var(--nav-color);
+  --section-bg-color: #ececec;
+  --section-color: rgb(182, 182, 182);
 }

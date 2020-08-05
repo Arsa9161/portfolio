@@ -1,0 +1,17 @@
+.row {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &--padding-t-b {
+    margin: 60px 0;
+  }
+  &--1 {
+    flex-direction: column;
+
+    @mixin atMedium-width {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.shadow {
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+
+  &--only-hover:hover,
+  &--only-hover:active {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+      10px 10px 15px rgba(70, 70, 70, 0.12);
+  }
+}
+html[theme="dark"] {
+  .shadow {
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+      10px 10px 15px rgba(0, 0, 0, 0.15);
+
+    &--only-hover:hover,
+    &--only-hover:active {
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+        10px 10px 15px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

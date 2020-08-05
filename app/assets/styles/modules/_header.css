@@ -1,11 +1,14 @@
 .header {
-  box-shadow: 0 2.8px 5.2px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
   &__logo {
     width: 50px;
     display: inline-block;
   }
   &__content {
+    position: relative;
     margin-top: 18px;
     float: right;
+    display: flex;
+    align-items: center;
   }
 }

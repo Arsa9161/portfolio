@@ -6,6 +6,7 @@
     margin-left: 1rem;
   }
   a {
+    font-weight: 400;
     text-decoration: none;
     color: var(--nav-color);
     letter-spacing: 1px;
