@@ -13,3 +13,4 @@ html[theme="light"] {
   --section-bg-color: #ececec;
   --section-color: rgb(182, 182, 182);
 }
+$gradient-color: #f00, #3020ff;

@@ -1,0 +1,13 @@
+.footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--nav-color);
+  color: var(--section-color);
+
+  a {
+    text-decoration: none;
+    color: orange;
+  }
+}

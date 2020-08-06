@@ -3,7 +3,11 @@
     @mixin-content;
   }
 }
-
+@define-mixin atSmally-width {
+  @media (min-width: 700px) {
+    @mixin-content;
+  }
+}
 @define-mixin atMedium-width {
   @media (min-width: 800px) {
     @mixin-content;

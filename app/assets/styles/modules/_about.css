@@ -12,6 +12,13 @@
     width: 100%;
     color: rgb(153, 153, 153);
 
+    @mixin atSmall-width {
+      width: 90%;
+    }
+
+    @mixin atSmally-width {
+      width: 70%;
+    }
     @mixin atMedium-width {
       padding: 30px 40px;
       letter-spacing: 2px;
@@ -26,20 +33,34 @@
       width: 90px;
       height: 13px;
       border: 1px solid transparent;
-      border-image: linear-gradient(to right, #f00, #3020ff);
+      border-image: linear-gradient(to right, $gradient-color);
       border-image-slice: 1;
     }
   }
   &__info {
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     font-size: 1.35rem;
+
     @mixin atMedium-width {
       width: 35%;
+    }
+    @mixin atLarge-width {
+      margin-top: 0;
       margin-bottom: 0;
       font-size: 1.5rem;
     }
 
     &__parag {
+      @mixin atSmall-width {
+        margin-left: 1rem;
+      }
+      @mixin atMedium-width {
+        margin-left: 0;
+      }
+      @mixin atLarge-width {
+        margin-left: 0.5rem;
+      }
       span {
         text-align: right;
         font-weight: 300;
@@ -48,8 +69,13 @@
     }
   }
   &__bio {
+    margin-bottom: -20px;
+
     @mixin atMedium-width {
+      margin-bottom: 0;
       width: 50%;
+    }
+    @mixin atLarge-width {
       font-size: 1.2rem;
     }
   }
