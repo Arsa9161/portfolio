@@ -2,23 +2,44 @@
   &__info,
   &__bio {
     display: inline-block;
-    padding: 30px 40px;
+    padding: 20px 20px;
     border-radius: 20px;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 1px;
     font-weight: 300;
     line-height: 1.9rem;
-    height: 250px;
+    width: 100%;
     color: rgb(153, 153, 153);
+
+    @mixin atMedium-width {
+      padding: 30px 40px;
+      letter-spacing: 2px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      bottom: 45px;
+      transform-origin: 100% 100%;
+      transform: rotate(-45deg);
+      width: 90px;
+      height: 13px;
+      border: 1px solid transparent;
+      border-image: linear-gradient(to right, #f00, #3020ff);
+      border-image-slice: 1;
+    }
   }
   &__info {
-    width: 35%;
-    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-size: 1.35rem;
+    @mixin atMedium-width {
+      width: 35%;
+      margin-bottom: 0;
+      font-size: 1.5rem;
+    }
+
     &__parag {
-      position: relative;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
       span {
         text-align: right;
         font-weight: 300;
@@ -27,6 +48,9 @@
     }
   }
   &__bio {
-    width: 50%;
+    @mixin atMedium-width {
+      width: 50%;
+      font-size: 1.2rem;
+    }
   }
 }

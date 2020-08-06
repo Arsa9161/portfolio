@@ -1,4 +1,6 @@
 .section {
-  height: 100vh;
   background-color: var(--section-bg-color);
+  @mixin atMedium-width {
+    height: 100vh;
+  }
 }

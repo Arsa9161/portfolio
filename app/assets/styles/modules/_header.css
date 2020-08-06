@@ -1,4 +1,9 @@
 .header {
+  display: none;
+  @mixin atMedium-width {
+    display: block;
+  }
+
   padding-top: 20px;
   &__logo {
     width: 50px;
