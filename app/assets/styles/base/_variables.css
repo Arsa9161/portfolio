@@ -4,6 +4,8 @@ html[theme="dark"] {
   --nav-color: var(--intro-color);
   --config-color: var(--nav-color);
   --section-bg-color: #091921;
+  --section-color: rgb(102, 99, 99);
+  --link-color: green;
 }
 html[theme="light"] {
   --intro-bg-color: #c6c6c6;
@@ -12,5 +14,6 @@ html[theme="light"] {
   --config-color: var(--nav-color);
   --section-bg-color: #ececec;
   --section-color: rgb(182, 182, 182);
+  --link-color: green;
 }
 $gradient-color: #f00, #3020ff;

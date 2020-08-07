@@ -5,6 +5,10 @@
   align-items: center;
   background-color: var(--nav-color);
   color: var(--section-color);
+  font-size: 0.8rem;
+  @mixin atSmall-width {
+    font-size: 1rem;
+  }
 
   a {
     text-decoration: none;

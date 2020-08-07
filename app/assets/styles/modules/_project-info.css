@@ -1,0 +1,22 @@
+.project-info {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__img {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 20px;
+
+    img {
+      display: block;
+    }
+  }
+  &__name,
+  &__desc {
+    border: 1px solid red;
+    flex-direction: column;
+    width: 50%;
+  }
+}

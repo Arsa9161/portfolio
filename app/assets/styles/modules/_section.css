@@ -1,6 +1,14 @@
 .section {
   background-color: var(--section-bg-color);
+  @mixin atMedium-width {
+    @mixin atLargest-height {
+      height: 100vh;
+    }
+  }
   @mixin atLargest-width {
     height: 100vh;
+  }
+  &--auto-height {
+    height: auto;
   }
 }

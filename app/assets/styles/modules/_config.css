@@ -20,9 +20,19 @@
     }
     .config__theme-controller {
       font-size: 1.3rem;
+      @mixin atLargest-width {
+        @mixin atLarge-height {
+          font-size: 1.5rem;
+        }
+      }
     }
     .config__lang {
       font-size: 0.8rem;
+      @mixin atLargest-width {
+        @mixin atLarge-height {
+          font-size: 1rem;
+        }
+      }
     }
   }
   &__lang {
@@ -30,6 +40,11 @@
     font-size: 0.9rem;
     display: flex;
 
+    @mixin atLargest-width {
+      @mixin atLarge-height {
+        font-size: 1.2rem;
+      }
+    }
     cursor: pointer;
     a {
       padding: 0 5px;
@@ -45,8 +60,18 @@
     color: var(--config-color);
     font-size: 1.5rem;
     margin: 0 5px 0 8px;
+    position: relative;
 
+    @mixin atLargest-width {
+      @mixin atLarge-height {
+        font-size: 1.7rem;
+      }
+    }
     &__items {
+      position: absolute;
+      top: 38px;
+      right: -7px;
+
       opacity: 0;
       z-index: -10;
       &.active {
@@ -59,12 +84,9 @@
 
       padding: 20px;
       border-radius: 10px;
-      position: absolute;
-      top: 38px;
-      right: -3px;
+
       box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.1),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
       &__item {
         &:not(:last-child) {
           border-bottom: 1px solid #ccc;

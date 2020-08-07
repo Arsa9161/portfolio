@@ -13,6 +13,9 @@
   &--1 {
     @mixin atMedium-width {
       flex-direction: row;
+      @mixin atLargest-height {
+        flex-direction: column;
+      }
     }
   }
 }
