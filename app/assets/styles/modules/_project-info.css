@@ -5,18 +5,28 @@
   align-items: center;
 
   &__img {
-    width: 40%;
+    width: 50%;
     overflow: hidden;
     border-radius: 20px;
-
+    margin-left: 100px;
     img {
       display: block;
     }
   }
   &__name,
   &__desc {
-    border: 1px solid red;
-    flex-direction: column;
-    width: 50%;
+    width: 60%;
+  }
+  &__name {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__desc {
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    span {
+      font-weight: 300;
+    }
   }
 }

@@ -50,6 +50,17 @@
     margin-bottom: 50px;
     font-size: 1.35rem;
 
+    &--large {
+      margin: 20px 0;
+      @mixin atMedium-width {
+        margin: 0;
+        width: 40% !important;
+        @mixin atLargest-height {
+          width: 50% !important;
+          margin-bottom: 50px;
+        }
+      }
+    }
     @mixin atSmally-width {
       @mixin atLarge-height {
         font-size: 1.7rem;
@@ -87,6 +98,18 @@
   }
   &__bio {
     margin-bottom: -20px;
+
+    &__link {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__parag {
+      color: red;
+
+      span {
+        color: var(--section-color);
+      }
+    }
 
     @mixin atSmally-width {
       @mixin atLarge-height {

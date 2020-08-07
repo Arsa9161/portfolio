@@ -11,4 +11,16 @@
   &--auto-height {
     height: auto;
   }
+  &--full-height {
+    @mixin atMedium-width {
+      @mixin atLargest-height {
+        height: 95vh;
+      }
+    }
+    @mixin atLargest-width {
+      @mixin atLarge-height {
+        height: 95vh;
+      }
+    }
+  }
 }

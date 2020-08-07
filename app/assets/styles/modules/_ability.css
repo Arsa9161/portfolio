@@ -9,6 +9,7 @@
   @mixin atSmall-width {
     padding-top: 40px;
   }
+
   &:last-child {
     margin-bottom: 20px;
     @mixin atSmall-width {
@@ -18,11 +19,18 @@
   &:not(:last-child) {
     border-bottom: 1px dashed var(--section-color);
   }
+  &--b-padding {
+    padding-bottom: 20px;
+    @mixin atMedium-width {
+      padding-bottom: 0;
+    }
+  }
   &__title {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 300;
     margin-bottom: 15px;
+
     @mixin atSmall-width {
       font-size: 1.3rem;
       margin-bottom: 30px;
@@ -31,7 +39,13 @@
       @mixin atLarge-height {
         font-size: 1.7rem;
         margin-top: 10px;
-        margin-bottom: -55px;
+      }
+    }
+    &--no-b-margin {
+      @mixin atLargest-width {
+        @mixin atLarge-height {
+          margin-bottom: -55px;
+        }
       }
     }
   }
@@ -46,9 +60,6 @@
       padding-bottom: 20px;
     }
 
-    &--horizontally {
-      flex-direction: row;
-    }
     &__item {
       display: flex;
       flex-direction: column;
@@ -59,6 +70,15 @@
         margin: 20px 50px;
       }
 
+      &--horizontally {
+        @mixin atMedium-width {
+          flex-direction: row;
+          justify-content: space-around;
+          @mixin atLargest-height {
+            flex-direction: column;
+          }
+        }
+      }
       &__img {
         overflow: hidden;
         border-radius: 20px;
