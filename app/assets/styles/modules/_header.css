@@ -1,8 +1,4 @@
 .header {
-  display: none;
-  @mixin atLarge-width {
-    display: block;
-  }
   @mixin atLargest-width {
     @mixin atLarge-height {
       font-size: 1.1rem;
@@ -14,6 +10,13 @@
   &__logo {
     width: 50px;
     display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    @mixin atMedium-width {
+      left: 0;
+      transform: translateX(0);
+    }
   }
   &__content {
     position: relative;

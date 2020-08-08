@@ -1,4 +1,9 @@
 .nav-links {
+  display: none;
+  @mixin atMedium-width {
+    display: block;
+  }
+
   ul {
     display: flex;
   }
@@ -7,9 +12,13 @@
   }
   a {
     font-weight: 400;
+    font-size: 0.9rem;
     text-decoration: none;
     color: var(--nav-color);
     letter-spacing: 1px;
     padding: 5px 10px;
+    @mixin atLarge-width {
+      font-size: 1rem;
+    }
   }
 }

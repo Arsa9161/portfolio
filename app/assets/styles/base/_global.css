@@ -6,6 +6,8 @@
   box-sizing: border-box;
 
   -webkit-tap-highlight-color: transparent;
+  letter-spacing: 1px;
+
   /*border: 1px solid rgb(63, 61, 61);*/
 }
 
