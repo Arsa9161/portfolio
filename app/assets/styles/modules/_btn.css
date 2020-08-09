@@ -68,7 +68,7 @@
 
     border: none;
     background-image: none;
-    color: rgb(153, 153, 153);
+    color: $btn-hover;
   }
   img {
     width: 60%;

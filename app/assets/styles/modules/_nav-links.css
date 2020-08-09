@@ -1,5 +1,6 @@
 .nav-links {
   display: none;
+  position: relative;
   @mixin atMedium-width {
     display: block;
   }
@@ -17,8 +18,15 @@
     color: var(--nav-color);
     letter-spacing: 1px;
     padding: 5px 10px;
+
     @mixin atLarge-width {
       font-size: 1rem;
+    }
+    &:hover,
+    &:active,
+    &.active {
+      color: var(--nav-color-active);
+      border-bottom: 1px solid var(--nav-color-active);
     }
   }
 }

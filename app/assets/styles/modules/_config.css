@@ -10,6 +10,7 @@
     top: 15px;
     right: 20px;
   }
+
   &--header {
     position: static;
     margin-left: 50px;
@@ -50,6 +51,9 @@
       padding: 0 5px;
       text-decoration: none;
       color: var(--config-color);
+      &:hover {
+        color: var(--nav-color-active);
+      }
     }
     li:not(:last-child) {
       border-right: 1px solid var(--config-color);
@@ -66,6 +70,9 @@
       @mixin atLarge-height {
         font-size: 1.7rem;
       }
+    }
+    i:hover {
+      color: var(--nav-color-active);
     }
     &__items {
       position: absolute;

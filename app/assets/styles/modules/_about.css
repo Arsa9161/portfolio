@@ -104,10 +104,10 @@
       margin-bottom: 10px;
     }
     &__parag {
-      color: red;
-
+      font-weight: 400;
+      color: var(--section-color);
       span {
-        color: var(--section-color);
+        font-weight: 300;
       }
     }
 

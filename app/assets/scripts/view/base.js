@@ -4,6 +4,8 @@ const dom_elements = {
   theme_items: document.querySelectorAll(".config__theme-controller__items"),
   intro_bg: document.getElementById("intro-bg"),
   html: document.documentElement,
+  triangle: document.getElementById("triangle"),
+  home: document.getElementById("home"),
 };
 
 export default dom_elements;

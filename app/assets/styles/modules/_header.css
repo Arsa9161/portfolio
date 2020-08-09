@@ -7,15 +7,23 @@
   padding-top: 20px;
   max-width: 1140px;
   margin: 0 auto;
+
   &__logo {
     width: 50px;
     display: inline-block;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0;
+
     @mixin atMedium-width {
       left: 0;
       transform: translateX(0);
+      margin-right: 20px;
+    }
+    #mySVG {
+      height: 55px;
+      width: 100px;
     }
   }
   &__content {
@@ -24,5 +32,11 @@
     float: right;
     display: flex;
     align-items: center;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
   }
 }

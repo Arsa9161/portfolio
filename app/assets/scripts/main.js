@@ -1,7 +1,7 @@
 import "../styles/styles.css";
 import dom_elements from "./view/base";
 import ChangeTheme from "./modal/change_theme";
-
+import "./view/draw_logo";
 if (module.hot) {
   module.hot.accept();
 }

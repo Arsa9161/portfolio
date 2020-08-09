@@ -19,7 +19,21 @@
       <header class="header">
         <div class="wrapper">
           <div class="header__logo">
-            <img src="../../assets/images/logo.png" alt="logo" />
+            <svg id="mySVG">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="red" />
+                  <stop offset="100%" stop-color="blue" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="none"
+                stroke="url(#gradient)"
+                stroke-width="1"
+                id="triangle"
+              />
+              Sorry, your browser does not support inline SVG.
+            </svg>
           </div>
           <div class="header__content">
             <nav class="nav-links">

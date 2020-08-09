@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--nav-color);
+  background-color: var(--footer-bg-color);
   color: var(--section-color);
   font-size: 0.8rem;
   @mixin atSmall-width {
