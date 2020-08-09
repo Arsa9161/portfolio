@@ -27,3 +27,28 @@ window.addEventListener("load", (e) => {
     dom_elements.html.setAttribute("theme", "light");
   }
 });
+/////////////////////////
+let pro = document.querySelector(".intro__pro-picture");
+let bg = document.querySelector(".intro__img-bg");
+let parag = document.querySelector(".intro__parag");
+let intro_shadow = document.querySelector(".intro__shadow");
+let intro = document.querySelector(".intro");
+window.addEventListener("scroll", (e) => {
+  let scroll = window.pageYOffset;
+  let window_height = window.innerHeight;
+
+  //(scroll / window_height) * 100
+  pro.style.marginTop = `${scroll}px`;
+  bg.style.marginTop = `${scroll}px`;
+  parag.style.marginTop = `${scroll}px`;
+
+  if (window.innerWidth >= 1200) {
+    pro.style.marginLeft = `${-scroll}px`;
+    bg.style.marginLeft = `${scroll}px`;
+    parag.style.marginRight = `${-scroll}px`;
+  }
+  //#091921
+  // shadow
+  intro_shadow.style.height = `${scroll}%`;
+  intro_shadow.style.opacity = scroll / intro.offsetHeight + 0.2;
+});

@@ -37,10 +37,12 @@ function myFunction() {
     (triangle.getBoundingClientRect().y / browser_height) * 100;
 
   if (scroll_percent < 90) {
-    let draw = -3 * (scroll_percent - 55);
+    let draw = -3 * (scroll_percent - 60);
     // Reverse the drawing (when scrolling upwards)
     triangle.style.strokeDashoffset = length - draw;
   } else {
     triangle.style.strokeDashoffset = length;
   }
 }
+
+window.addEventListener("load", myFunction);

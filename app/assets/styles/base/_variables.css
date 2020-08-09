@@ -4,7 +4,7 @@ html[theme="dark"] {
   --nav-color: var(--intro-color);
   --nav-color-active: rgb(255, 255, 255);
   --config-color: var(--nav-color);
-  --section-bg-color: #091921;
+  --section-bg-color: #08161d;
   --section-color: rgb(102, 99, 99);
   --footer-bg-color: #07121a;
 }

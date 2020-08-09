@@ -3,6 +3,7 @@
   position: relative;
   overflow: hidden;
   background-color: var(--intro-bg-color);
+
   &__pro-picture {
     img {
       display: block;
@@ -68,6 +69,7 @@
       }
     }
   }
+
   &__img-bg {
     img {
       width: 100%;
@@ -194,5 +196,17 @@
         }
       }
     }
+  }
+  &__shadow {
+    width: 100%;
+    height: 0;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      var(--intro-bg-color)
+    );
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
   }
 }
