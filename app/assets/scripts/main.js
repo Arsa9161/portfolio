@@ -43,12 +43,12 @@ window.addEventListener("scroll", (e) => {
   parag.style.marginTop = `${scroll}px`;
 
   if (window.innerWidth >= 1200) {
-    pro.style.marginLeft = `${-scroll}px`;
-    bg.style.marginLeft = `${scroll}px`;
-    parag.style.marginRight = `${-scroll}px`;
+    pro.style.marginLeft = `${-scroll / 2}px`;
+    bg.style.marginLeft = `${scroll / 2}px`;
+    parag.style.marginRight = `${-scroll / 2}px`;
   }
   //#091921
   // shadow
   intro_shadow.style.height = `${scroll}%`;
-  intro_shadow.style.opacity = scroll / intro.offsetHeight + 0.2;
+  intro_shadow.style.opacity = scroll / intro.offsetHeight + 0.55;
 });
