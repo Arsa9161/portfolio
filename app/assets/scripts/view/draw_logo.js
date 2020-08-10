@@ -1,6 +1,10 @@
 const { default: dom_elements } = require("./base");
 
-let a = 5;
+if (window.innerWidth >= 700) {
+  var a = 5;
+} else {
+  var a = 4;
+}
 
 let fA = `M ${a} ${11 * a} l ${4 * a} ${-10 * a} h ${2 * a} m 0 ${
   2 * a

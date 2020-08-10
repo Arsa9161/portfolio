@@ -1,10 +1,10 @@
 html[theme="dark"] {
-  --intro-bg-color: #091921;
+  --intro-bg-color: #03121a;
   --intro-color: #bebfc0;
   --nav-color: var(--intro-color);
   --nav-color-active: rgb(255, 255, 255);
   --config-color: var(--nav-color);
-  --section-bg-color: #08161d;
+  --section-bg-color: #091921;
   --section-color: rgb(102, 99, 99);
   --footer-bg-color: #07121a;
 }

@@ -13,7 +13,7 @@
     display: inline-block;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-55px);
     margin: 0;
 
     @mixin atMedium-width {
@@ -24,6 +24,10 @@
     #mySVG {
       height: 55px;
       width: 100px;
+      @mixin atMedium-width {
+        height: 55px;
+        width: 100px;
+      }
     }
   }
   &__content {
