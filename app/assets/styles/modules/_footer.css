@@ -6,6 +6,8 @@
   background-color: var(--footer-bg-color);
   color: var(--section-color);
   font-size: 0.8rem;
+  padding: 0 20px;
+  text-align: center;
   @mixin atSmall-width {
     font-size: 1rem;
   }

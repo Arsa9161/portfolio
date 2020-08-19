@@ -22,6 +22,11 @@
     @mixin atLarge-width {
       font-size: 1rem;
     }
+    @mixin atMedium-width {
+      @mixin atLargest-height {
+        font-size: 1rem;
+      }
+    }
     &:hover,
     &:active,
     &.active {

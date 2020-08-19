@@ -3,7 +3,7 @@
 
   @mixin atMedium-width {
     @mixin atLargest-height {
-      height: 100vh;
+      height: 105vh;
     }
   }
   @mixin atLargest-width {
