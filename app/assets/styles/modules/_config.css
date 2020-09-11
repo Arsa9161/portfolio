@@ -77,42 +77,57 @@
     &__items {
       position: absolute;
       top: 38px;
-      right: -7px;
-
+      right: -6px;
       opacity: 0;
       z-index: -10;
-      &.active {
-        opacity: 1;
-        z-index: 100;
-      }
       text-transform: uppercase;
       background-color: white;
-      width: 400px;
-
-      padding: 20px;
+      width: 250px;
+      padding: 10px;
       border-radius: 10px;
 
       box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.1),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      @mixin atSmall-width {
+        width: 400px;
+        padding: 20px;
+        right: -7px;
+      }
+      &.active {
+        opacity: 1;
+        z-index: 100;
+      }
       &__item {
         &:not(:last-child) {
           border-bottom: 1px solid #ccc;
         }
         width: 100%;
-        padding: 8px 0;
+        padding: 5px 0;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @mixin atSmall-width {
+          padding: 8px 0;
+        }
         img {
           border: 1px solid #ccc;
           border-radius: 10px;
           overflow: hidden;
-          width: 70px;
-          height: 35px;
+          width: 60px;
+          height: 30px;
           display: inline-block;
+
+          @mixin atSmall-width {
+            width: 70px;
+            height: 35px;
+          }
         }
         h6 {
-          font-size: 1rem;
+          font-size: 0.8rem;
+          @mixin atSmall-width {
+            font-size: 1rem;
+          }
         }
       }
     }
