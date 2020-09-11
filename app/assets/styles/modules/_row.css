@@ -7,9 +7,17 @@
   @mixin atMedium-width {
     justify-content: space-around;
   }
+
   &--padding-t-b {
-    margin: 70px 0;
+    margin: 60px 0;
   }
+  &--margin-t-less-atSmall {
+    margin-top: 10px;
+    @mixin atSmally-width {
+      margin-top: 50px;
+    }
+  }
+
   &--1 {
     @mixin atMedium-width {
       flex-direction: row;
