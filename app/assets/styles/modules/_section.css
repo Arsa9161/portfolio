@@ -1,6 +1,6 @@
 .section {
   background-color: var(--section-bg-color);
-
+  position: relative;
   @mixin atMedium-width {
     @mixin atLargest-height {
       height: 105vh;

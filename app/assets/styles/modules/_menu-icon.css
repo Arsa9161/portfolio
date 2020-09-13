@@ -1,7 +1,7 @@
 .menu-icon {
   width: 22px;
   height: 22px;
-
+  z-index: 10;
   position: relative;
   left: 5px;
   top: 38px;
@@ -15,7 +15,7 @@
 
   &::before {
     content: "";
-    width: 25px;
+    width: 17px;
     height: 2px;
     border-radius: 5px;
     background-color: var(--config-color);
@@ -41,7 +41,7 @@
   }
   &--x {
     &::before {
-      transform: rotate(45deg) scaleX(1.1);
+      transform: rotate(45deg) scaleX(1.6);
     }
     &::after {
       transform: rotate(-45deg) scaleX(1.1) translateY(-1px);
@@ -49,6 +49,50 @@
     .menu-icon__middle {
       opacity: 0;
       transform: scaleX(0);
+    }
+    .menu-icon__nav {
+      left: -30px;
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 50px;
+    left: -100vw;
+    width: 85vw;
+    padding: 40px 30px;
+    background-color: var(--section-bg-color);
+    z-index: 10;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: var(--menu-nav-shadow);
+    transition: 0.3s ease;
+
+    @mixin atSmall-height {
+      width: 75vw;
+      @mixin atLarge-height {
+        width: 50vw;
+      }
+    }
+
+    a {
+      color: var(--section-color);
+      padding: 12px 24px;
+      border-radius: 20px;
+      @mixin atSmall-height {
+        padding: 15px 30px;
+      }
+    }
+    a:not(:last-child) {
+      margin-bottom: 40px;
+      @mixin atSmall-height {
+        margin-bottom: 45px;
+        @mixin atLarge-height {
+          margin-bottom: 55px;
+        }
+      }
     }
   }
 }

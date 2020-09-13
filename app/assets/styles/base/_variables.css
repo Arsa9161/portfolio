@@ -7,6 +7,8 @@ html[theme="dark"] {
   --section-bg-color: #091921;
   --section-color: rgb(102, 99, 99);
   --footer-bg-color: #07121a;
+  --menu-nav-shadow: 5px 2px 15px 2px rgba(0, 0, 0, 0.33);
+  --modal-opacity: 0.9;
 }
 html[theme="light"] {
   --intro-bg-color: #c6c6c6;
@@ -17,6 +19,8 @@ html[theme="light"] {
   --section-bg-color: #ececec;
   --section-color: rgb(161, 161, 161);
   --footer-bg-color: var(--intro-color);
+  --menu-nav-shadow: 5px 2px 15px 1px rgba(0, 0, 0, 0.15);
+  --modal-opacity: 0.8;
 }
 $gradient-color: #f00, #3020ff;
 $btn-hover: rgb(153, 153, 153);

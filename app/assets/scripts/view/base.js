@@ -6,6 +6,8 @@ const dom_elements = {
   html: document.documentElement,
   triangle: document.getElementById("triangle"),
   home: document.getElementById("home"),
+  menu_icon: document.getElementById("menu-icon"),
+  modal: document.querySelector(".modal"),
 };
 
 export default dom_elements;

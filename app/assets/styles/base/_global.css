@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto", "Sans-serif";
+  background-color: var(--section-bg-color);
 }
 img {
   max-width: 100%;

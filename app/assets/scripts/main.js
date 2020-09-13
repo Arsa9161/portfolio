@@ -11,7 +11,12 @@ if (module.hot) {
 
 let theme = new ChangeTheme();
 let logo = new DrawLogo();
-new Intro();
+let curr_html = window.location.pathname.substring(
+  window.location.pathname.lastIndexOf("/") + 1
+);
+if (curr_html === "index.html" || curr_html === "") {
+  new Intro();
+}
 
 // init web site events
 (function () {
@@ -44,3 +49,9 @@ const setTheme = function () {
     dom_elements.html.setAttribute("theme", "light");
   }
 };
+if (dom_elements.menu_icon) {
+  dom_elements.menu_icon.addEventListener("click", (e) => {
+    dom_elements.menu_icon.classList.toggle("menu-icon--x");
+    dom_elements.modal.classList.toggle("modal--active");
+  });
+}

@@ -48,9 +48,13 @@
     }
     cursor: pointer;
     a {
-      padding: 0 5px;
+      padding: 0 4px;
       text-decoration: none;
       color: var(--config-color);
+
+      @mixin atMedium-width {
+        padding: 0 5px;
+      }
       &:hover {
         color: var(--nav-color-active);
       }

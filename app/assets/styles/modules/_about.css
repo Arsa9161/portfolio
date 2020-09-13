@@ -51,7 +51,7 @@
     font-size: 1.35rem;
 
     &--large {
-      margin: 20px 0;
+      margin-bottom: 40px;
       @mixin atMedium-width {
         margin: 0;
         width: 40% !important;

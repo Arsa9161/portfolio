@@ -11,15 +11,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon">
     <title>Арса</title>
   </head>
   <body>
   
     <section class="section section--full-height--always section--full-height--no-medium">
+      <div class="modal"></div>
       <header class="header">
         <div class="wrapper">
+          <div class="menu-icon" id="menu-icon">
+            <div class="menu-icon__middle"></div>
+            <div class="menu-icon__nav">
+              <a href="./index.html#home" class="shadow">Эхлэл</a>
+              <a href="./ability.html" class="shadow">Миний чадвар</a>
+              <a href="./projects.html" class="shadow">Хийсэн ажлууд</a>
+              <a href="./contuct.html" class="shadow">Холбоо барих</a>
+            </div>
+          </div>
           <div class="header__logo">
-            <svg id="mySVG">
+            <a href="./index.html#home"><svg id="mySVG">
               <defs>
                 <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stop-color="red" />
@@ -33,7 +44,7 @@
                 id="triangle"
               />
               Sorry, your browser does not support inline SVG.
-            </svg>
+            </svg></a>
           </div>
           <div class="header__content">
             <nav class="nav-links">
