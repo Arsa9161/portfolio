@@ -28,10 +28,24 @@
       }
     }
     &:hover,
-    &:active,
-    &.active {
+    &:active {
       color: var(--nav-color-active);
-      border-bottom: 1px solid var(--nav-color-active);
     }
+    &.active {
+      background: linear-gradient(to right, $gradient-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__indicator {
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 1.5px;
+    transition: 0.4s;
+
+    background: linear-gradient(to right, $gradient-color);
+    z-index: 1;
+    border-radius: 2px;
   }
 }

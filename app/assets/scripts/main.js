@@ -3,7 +3,7 @@ import dom_elements from "./view/base";
 import ChangeTheme from "./modal/change_theme";
 import DrawLogo from "./modal/draw_logo";
 import Intro from "./modal/intro_animation";
-
+import "./modal/snake";
 // import "./view/draw_logo";
 if (module.hot) {
   module.hot.accept();
