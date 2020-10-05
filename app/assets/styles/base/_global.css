@@ -10,7 +10,9 @@
 
   /*border: 1px solid rgb(63, 61, 61);*/
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", "Sans-serif";
   background-color: var(--section-bg-color);

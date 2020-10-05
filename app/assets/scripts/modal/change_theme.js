@@ -15,6 +15,13 @@ export default class ChangeTheme {
   events() {
     this.switch_btns.forEach((el) =>
       el.addEventListener("click", (e) => {
+        // remove checked btns
+        this.switch_btns.forEach((other_element) => {
+          if (other_element.checked) {
+            other_element.checked = false;
+          }
+        });
+        el.checked = true;
         if (el.checked) {
           const theme_name = el.dataset.theme;
           localStorage.setItem("theme", theme_name);
