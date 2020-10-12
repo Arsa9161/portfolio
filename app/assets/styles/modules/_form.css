@@ -1,0 +1,36 @@
+.form {
+  max-width: 60%;
+  margin: 0 auto;
+  color: var(--section-color);
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+  }
+}
+[type="text"],
+[type="email"] {
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#lastname {
+  margin-right: 20px;
+}
+#email {
+  width: 100%;
+}

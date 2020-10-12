@@ -16,7 +16,7 @@
   </head>
   <body>
   
-    <section class="section section--full-height--always section--full-height--no-medium">
+    <section class="section--auto-height">
       <div class="modal"></div>
       <header class="header">
         <div class="wrapper">
@@ -49,7 +49,7 @@
           <div class="header__content">
             <nav class="nav-links">
               <ul>
-                <li><a  class="nav-links__item" href="./ability.html#home">Эхлэл</a></li>
+                <li><a  class="nav-links__item" href="./index.html#home">Эхлэл</a></li>
                 <li><a class="nav-links__item" href="./ability.html">Миний чадвар</a></li>
                 <li><a class="nav-links__item" href="./projects.html">Хийсэн ажлууд</a></li>
                 <li><a class="nav-links__item active" href="./contuct.html">Холбоо барих</a></li>
@@ -112,7 +112,30 @@
             </div>
           </div>
         </div>
-      
+      <div class="wrapper ability" >
+        <div class="ability__title">Сэтгэгдэл vлдээх</div>
+        <form action="" name="form" class="form">
+          <div class="form__row">
+            
+            <div class="form__input">
+              <label for="lastname">Овог</label>
+              <input type="text" name="lastname" id="lastname">
+            </div>
+
+            <div class="form__input">
+               <label for="username">Нэр</label>
+               <input type="text" name="username" id="username">
+            </div>
+         
+          </div>
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" >
+
+          <label for="textarea">Сэтгэгдэл</label>
+          <input type="text" name="textarea" id="textarea" col="4" row="5" >
+          <input type="submit" value="илгээх">
+        </form>
+      </div>
     </section>
     <footer class="footer"><p>Built and designed by <a href="">Arsa</a>. Hosted with <a href="">Netlify</a>.</p></footer>
     <script src="../../bundled.js"></script>
