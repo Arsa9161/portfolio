@@ -33,21 +33,21 @@ if (curr_html === "index.html" || curr_html === "") {
     logo.drawLogo();
   });
 
-  window.addEventListener("resize", logo.preparePath);
-  window.addEventListener("click", (e) => {
-    // if (
-    //   !e.target.classList.contains("theme-controller") &&
-    //   !e.target.classList.contains("config__theme-controller__items") &&
-    //   !e.target.classList.contains("switch-btn")
-    // ) {
-    //   console.log("yes");
-    //   dom_elements.theme_items.forEach((el) => {
-    //     if (el.classList.contains("active")) {
-    //       el.classList.remove("active");
-    //     }
-    //   });
-    // }
-  });
+  // window.addEventListener("resize", logo.preparePath);
+  // window.addEventListener("click", (e) => {
+  // if (
+  //   !e.target.classList.contains("theme-controller") &&
+  //   !e.target.classList.contains("config__theme-controller__items") &&
+  //   !e.target.classList.contains("switch-btn")
+  // ) {
+  //   console.log("yes");
+  //   dom_elements.theme_items.forEach((el) => {
+  //     if (el.classList.contains("active")) {
+  //       el.classList.remove("active");
+  //     }
+  //   });
+  // }
+  //});
 })();
 // theme tohiruulah
 const setTheme = function () {
