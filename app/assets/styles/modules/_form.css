@@ -1,7 +1,7 @@
 .form {
   max-width: 60%;
   margin: 0 auto;
-  color: var(--section-color);
+
   display: flex;
   flex-direction: column;
 
@@ -27,12 +27,14 @@
   height: 30px;
   outline: none;
   margin-bottom: 20px;
-  padding: 10px;
   background-color: var(--section-bg-color);
-
+  color: var(--section-color);
+  font-size: 0.9rem;
   transition: all 0.5s ease;
 }
-
+.padding {
+  padding: 20px;
+}
 #lastname {
   margin-right: 20px;
 }
@@ -43,7 +45,8 @@
   outline: none;
   border-radius: 10px;
   background-color: var(--section-bg-color);
-  padding: 0px;
+  padding: 15px;
+  color: var(--section-color);
   margin-bottom: 50px;
 }
 [type="submit"] {
@@ -52,17 +55,15 @@
   height: 40px;
 }
 .gradient {
-  padding: 0;
-
   border: double 1px transparent;
-  border-radius: 80px;
+  border-radius: 20px;
   background-image: linear-gradient(
       var(--section-bg-color),
       var(--section-bg-color)
     ),
-    radial-gradient(circle at bottom left, $gradient-color);
+    linear-gradient(to right, $gradient-color);
   background-origin: border-box;
-  background-clip: content-box, border-box;
+  background-clip: padding-box, border-box;
 }
 .gradient:hover {
   background-image: none;
