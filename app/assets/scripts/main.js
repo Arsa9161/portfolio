@@ -4,11 +4,12 @@ import ChangeTheme from "./modal/change_theme";
 import DrawLogo from "./modal/draw_logo";
 import Intro from "./modal/intro_animation";
 import "./modal/snake";
+import Admin from "./modal/admin";
 // import "./view/draw_logo";
 if (module.hot) {
   module.hot.accept();
 }
-
+new Admin();
 let theme = new ChangeTheme();
 let logo = new DrawLogo();
 let curr_html = window.location.pathname.substring(

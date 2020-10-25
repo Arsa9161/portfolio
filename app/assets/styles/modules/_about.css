@@ -26,12 +26,10 @@
     @mixin atMedium-width {
       padding: 30px 40px;
       letter-spacing: 2px;
-
-      @mixin atLargest-height {
+      z @mixin atLargest-height {
         width: 90% !important;
       }
     }
-
     &::after {
       content: "";
       position: absolute;
@@ -119,7 +117,7 @@
     }
     @mixin atMedium-width {
       margin-bottom: 0;
-      width: 40%;
+      width: 50%;
 
       @mixin atLargest-height {
         font-size: 1.25rem;

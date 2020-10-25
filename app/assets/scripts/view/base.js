@@ -8,6 +8,11 @@ const dom_elements = {
   home: document.getElementById("home"),
   menu_icon: document.getElementById("menu-icon"),
   modal: document.querySelector(".modal"),
+  // admin
+  admin: document.getElementById("admin"),
+  admin_submit: document.getElementById("admin-submit"),
+  admin_user: document.querySelector("#admin #username"),
+  admin_pass: document.querySelector("#admin #password"),
 };
 
 export default dom_elements;

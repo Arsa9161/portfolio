@@ -20,7 +20,9 @@
 }
 [type="text"],
 [type="email"],
-[type="submit"] {
+[type="submit"],
+[type="password"],
+[type="file"] {
   border: none;
   border-radius: 10px;
   width: 300px;
@@ -35,7 +37,8 @@
 .padding {
   padding: 20px;
 }
-#lastname {
+#lastname,
+#title {
   margin-right: 20px;
 }
 #email {
@@ -48,6 +51,7 @@
   padding: 15px;
   color: var(--section-color);
   margin-bottom: 50px;
+  resize: none;
 }
 [type="submit"] {
   color: var(--section-color);

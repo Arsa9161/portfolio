@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon">
+    <title>Арса</title>
+  </head>
+  <body>
+  
+    <section class="section section--auto-height">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header__logo" style="left: 45%;">
+            <a href="./index.html#home"><svg id="mySVG">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="red" />
+                  <stop offset="100%" stop-color="blue" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="none"
+                stroke="url(#gradient)"
+                stroke-width="1"
+                id="triangle"
+              />
+              Sorry, your browser does not support inline SVG.
+            </svg></a>
+          </div>         
+        </div>
+      </header>
+      <div class="wrapper ability" id="admin" style="padding: 120px 0;" >
+        <div class="ability__title">ADMIN</div>
+        <form action="" name="form" class="form" >
+
+            <div class="form__input">
+               <label for="username">Нэр</label>
+               <input type="text" name="username" id="username" class="shadow--only-hover gradient padding" required>
+            </div>
+
+            <div class="form__input">
+                <label for="password">Нууц үг</label>
+                <input type="password" name="password" id="password" class="shadow--only-hover gradient padding" required>
+             </div>
+
+          <input type="submit" value="илгээх" id="admin-submit"  class="shadow--only-hover gradient" style="margin-top: 20px;">
+        </form>
+      </div>
+
+      <!-- medee oruulah heseg -->
+      <!-- <div class="wrapper ability" >
+        <div class="ability__title">Блог оруулах</div>
+        <form action="" name="form" class="form">
+          <div class="form__row">
+            
+            <div class="form__input">
+              <label for="title">Гарчиг</label>
+                <input type="text" name="title" id="title" class="shadow--only-hover gradient padding" > 
+            </div>
+
+            <div class="form__input">
+               <label for="img">Зураг</label>
+               <input type="file" name="img" id="img">
+            </div>
+         
+          </div>
+
+          <label for="textarea">Тайлбар</label>
+         
+          <textarea name="textarea" id="textarea" cols="30" rows="10" class="shadow--only-hover gradient"></textarea>
+          <input type="submit" value="оруулах"  class="shadow--only-hover gradient">
+        </form>
+      </div> -->
+
+    </section>
+    <footer class="footer"><p>Built and designed by <a href="">Arsa</a>. Hosted with <a href="">Netlify</a>.</p></footer>
+    <script src="../../bundled.js"></script>
+  </body>
+</html>
