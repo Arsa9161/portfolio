@@ -10,7 +10,7 @@ const dom_elements = {
   modal: document.querySelector(".modal"),
   // admin
   admin: document.getElementById("admin"),
-  admin_submit: document.getElementById("admin-submit"),
+  admin_form: document.getElementById("admin-form"),
   admin_user: document.querySelector("#admin #username"),
   admin_pass: document.querySelector("#admin #password"),
 };
