@@ -1,9 +1,9 @@
 import dom_elements from "../view/base";
 import jsonData from "./blogs.json";
 import fs from "fs";
+
 export default class Admin {
     constructor(){
-     
       this.json = jsonData;
         this.username = "admin";
         this.password = "admin";
@@ -18,19 +18,19 @@ export default class Admin {
             
             <div class="form__input">
               <label for="title">Гарчиг</label>
-                <input type="text" name="title" id="title" class="shadow--only-hover gradient padding" > 
+                <input type="text" name="title" id="title" class="shadow--only-hover gradient padding" required > 
             </div>
 
             <div class="form__input">
                <label for="img">Зураг</label>
-               <input type="file" name="img" id="img">
+               <input type="file" name="img" id="img"  required>
             </div>
          
           </div>
 
           <label for="textarea">Тайлбар</label>
          
-          <textarea name="textarea" id="textarea" cols="30" rows="10" class="shadow--only-hover gradient"></textarea>
+          <textarea name="textarea" id="textarea" cols="30" rows="10" class="shadow--only-hover gradient"  required></textarea>
           <input type="submit" value="оруулах"  class="shadow--only-hover gradient">
         </form>`
     }
@@ -61,7 +61,7 @@ export default class Admin {
     }
     pushJSON(){
       const img_value = this.blog_img.value.split("\\");
-      const blog_data = {
+      this.blog_data = {
         id:this.json.data.blogs.length + 1,
         title:this.blog_title.value,
         desc:this.blog_desc.value,
@@ -70,25 +70,40 @@ export default class Admin {
       };
 
       
-      fs.readFile('./blogs.json', 'utf8', function readFileCallback(err, data){
-        if (err){
-            console.log(err);
-            return
-        } else {
-          try {
-            obj = JSON.parse(data); //now it an object
-            obj.data.blogs.push(JSON.stringify(blog_data)); //add some data
-            json = JSON.stringify(obj); //convert it back to json
-            fs.writeFile('./blogs.json', json, 'utf8', callback); // write it back 
-          } catch(err) {
-            console.log('Error parsing JSON string:', err)
-        }
-    }
-    });
+    //   fs.readFile('blogs.json', 'utf8', function readFileCallback(err, data){
+    //     if (err){
+    //         console.log(err);
+    //         return
+    //     } else {
+    //       try {
+    //         obj = JSON.parse(data); //now it an object
+    //         obj.data.blogs.push(JSON.stringify(blog_data)); //add some data
+    //         json = JSON.stringify(obj); //convert it back to json
+    //         fs.writeFile('blogs.json', json, 'utf8', callback); // write it back 
+    //       } catch(err) {
+    //         console.log('Error parsing JSON string:', err)
+    //     }
+    // }
+    // });
+      this.clearElements();
       alert("Амжилттай нэмэгдлээ");
       // document.location.href = "http://localhost:8080/blog.html";
-    }
 
+    }
+    clearElements(){
+      this.blog_title.value = "";
+      this.blog_img.value = "";
+      this.blog_desc.value = "";
+    }
+    //  downloadObjectAsJson(exportObj, exportName){
+    //   var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
+    //   var downloadAnchorNode = document.createElement('a');
+    //   downloadAnchorNode.setAttribute("href",     dataStr);
+    //   downloadAnchorNode.setAttribute("download", exportName + ".json");
+    //   document.body.appendChild(downloadAnchorNode); // required for firefox
+    //   downloadAnchorNode.click();
+    //   downloadAnchorNode.remove();
+    // }
      formatDate(date) {
       var d = new Date(date),
           month = '' + (d.getMonth() + 1),

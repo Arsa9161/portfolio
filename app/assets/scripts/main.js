@@ -5,14 +5,16 @@ import DrawLogo from "./modal/draw_logo";
 import Intro from "./modal/intro_animation";
 import "./modal/snake";
 import Admin from "./modal/admin";
-import json from "./modal/blogs.json";
 import Blog from "./modal/blog";
 import BlogMore from "./modal/blogMore";
-import fs from "fs";
+import Testimonial from "./modal/testimonial";
+
+
 // import "./view/draw_logo";
 if (module.hot) {
   module.hot.accept();
 }
+new Testimonial();
 new BlogMore();
 new Admin();
 new Blog();

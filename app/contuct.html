@@ -112,31 +112,31 @@
             </div>
           </div>
         </div>
-      <div class="wrapper ability" >
+      <div class="wrapper ability">
         <div class="ability__title">Сэтгэгдэл илгээх</div>
-        <form action="" name="form" class="form">
+        <form action="" name="form" class="form" id="testimonial-form">
           <div class="form__row">
             
             <div class="form__input">
               <label for="lastname">Овог</label>
-              <!-- <div class="gradient"> -->
 
-                <input type="text" name="lastname" id="lastname" class="shadow--only-hover gradient padding" >
-              <!-- </div> -->
+                <input type="text" name="lastname" id="lastname" class="shadow--only-hover gradient padding" required >
+            
             </div>
 
             <div class="form__input">
                <label for="username">Нэр</label>
-               <input type="text" name="username" id="username" class="shadow--only-hover gradient padding">
+               <input type="text" name="username" id="username" class="shadow--only-hover gradient padding"  required>
             </div>
          
           </div>
-          <label for="email">email</label>
-          <input type="email" name="email" id="email" class="shadow--only-hover gradient padding"  >
-
-          <label for="textarea">Сэтгэгдэл</label>
          
-          <textarea name="textarea" id="textarea" cols="30" rows="10" class="shadow--only-hover gradient"></textarea>
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" class="shadow--only-hover gradient padding"  required>
+
+          <label for="textarea" >Сэтгэгдэл</label>
+         
+          <textarea name="textarea" id="textarea" cols="30" rows="10" class="shadow--only-hover gradient" required></textarea>
           <input type="submit" value="илгээх"  class="shadow--only-hover gradient">
         </form>
       </div>
