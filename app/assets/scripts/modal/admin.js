@@ -70,22 +70,23 @@ export default class Admin {
       };
 
       
-    //   fs.readFile('blogs.json', 'utf8', function readFileCallback(err, data){
-    //     if (err){
-    //         console.log(err);
-    //         return
-    //     } else {
-    //       try {
-    //         obj = JSON.parse(data); //now it an object
-    //         obj.data.blogs.push(JSON.stringify(blog_data)); //add some data
-    //         json = JSON.stringify(obj); //convert it back to json
-    //         fs.writeFile('blogs.json', json, 'utf8', callback); // write it back 
-    //       } catch(err) {
-    //         console.log('Error parsing JSON string:', err)
-    //     }
-    // }
-    // });
+      fs.readFile('blogs.json', 'utf8', function readFileCallback(err, data){
+        if (err){
+            console.log(err);
+            return
+        } else {
+          try {
+            obj = JSON.parse(data); //now it an object
+            obj.data.blogs.push(JSON.stringify(blog_data)); //add some data
+            json = JSON.stringify(obj); //convert it back to json
+            fs.writeFile('blogs.json', json, 'utf8', callback); // write it back 
+          } catch(err) {
+            console.log('Error parsing JSON string:', err)
+        }
+    }
+    });
       this.clearElements();
+      console.log(this.blogs);
       alert("Амжилттай нэмэгдлээ");
       // document.location.href = "http://localhost:8080/blog.html";
 
