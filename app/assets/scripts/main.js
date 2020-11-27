@@ -9,7 +9,6 @@ import Blog from "./modal/blog";
 import BlogMore from "./modal/blogMore";
 import Testimonial from "./modal/testimonial";
 
-
 // import "./view/draw_logo";
 if (module.hot) {
   module.hot.accept();
